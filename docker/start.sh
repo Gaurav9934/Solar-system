@@ -62,14 +62,16 @@ SUB_ICON_R=20
 ENABLE_BUMPER=true
 BUMPER_DURATION=5   # seconds
 BUMPER_MESSAGES=(
-    "The Leonid meteor shower remains active through November 30."
-    "Stay tuned for more views of fast Leonid meteors."
-    "Earth is crossing debris left behind by comet 55P Tempel-Tuttle."
-    "Leonid meteors can leave bright, persistent trails across the sky."
-    "The Leonids are among the fastest annual meteor showers."
-    "The 2026 Leonid peak has passed, but shower activity continues."
-    "Leonid particles enter Earth's atmosphere at about 71 kilometres per second."
-    "Explore the science behind the Leonid meteor shower."
+    "Explore the eight planets of our Solar System."
+    "The Sun holds our planetary system together through gravity."
+    "Journey from Mercury to the distant world of Neptune."
+    "Discover the moons orbiting Jupiter and Saturn."
+    "The asteroid belt lies between Mars and Jupiter."
+    "Explore the icy worlds beyond Neptune."
+    "Saturn's rings are made mostly of ice and rocky debris."
+    "Jupiter is the largest planet in our Solar System."
+    "Earth is the only world currently known to support life."
+    "Stay tuned for more Solar System discoveries."
 )
 
 #############################################
@@ -203,10 +205,11 @@ trap 'kill "$CLOCK_PID" 2>/dev/null || true; [ -n "$SUBS_PID" ] && kill "$SUBS_P
 #############################################
 # Static panel text (unchanged across videos)
 #############################################
-printf 'LEONID  METEOR  SHOWER' > "$ASSET_DIR/title1.txt"
-printf 'NOVEMBER METEOR SHOWER' > "$ASSET_DIR/header.txt"
-printf 'LEONID METEOR WATCH' > "$ASSET_DIR/eyebrow.txt"
-printf 'Subscribe for Leonid meteor updates' > "$ASSET_DIR/cta.txt"
+printf 'SOLAR SYSTEM EXPLORER' > "$ASSET_DIR/title1.txt"
+printf 'L I V E   S O L A R   S Y S T E M' > "$ASSET_DIR/title2.txt"
+printf 'OUR COSMIC NEIGHBORHOOD' > "$ASSET_DIR/header.txt"
+printf 'SOLAR SYSTEM LIVE' > "$ASSET_DIR/eyebrow.txt"
+printf 'Subscribe for space discoveries' > "$ASSET_DIR/cta.txt"
 printf 'DID YOU KNOW' > "$ASSET_DIR/fact_label.txt"
 
 #############################################
